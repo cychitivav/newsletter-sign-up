@@ -17,6 +17,7 @@
 		</title>
 
 		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/responsive.css" />
 
 		<script src="./js/sendForm.js" defer></script>
 	</head>
@@ -50,13 +51,17 @@
 
 		<section id="success" style="display: none">
 			<img src="assets/images/icon-success.svg" alt="success image" />
-			<h1>Thanks for subscribing!</h1>
-			<p>
-				A confirmation email has been sent to
-				<span id="sent-email">ash@loremcompany.com</span>. Please open it and
-				click the button inside to confirm your subscription.
-			</p>
-			<button onclick="location.reload()">Dismiss message</button>
+			<article>
+				<h1>Thanks for subscribing!</h1>
+				<p>
+					A confirmation email has been sent to
+					<span id="sent-email">ash@loremcompany.com</span>. Please open it and
+					click the button inside to confirm your subscription.
+				</p>
+				<button onclick="location.reload()" type="submit">
+					Dismiss message
+				</button>
+			</article>
 		</section>
 	</body>
 </html>
