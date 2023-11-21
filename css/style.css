@@ -122,10 +122,19 @@ input:focus {
 input:focus:invalid {
     border: 1px solid hsl(0, 100%, 74%);
     background-color: hsl(4, 100%, 67%, 0.2);
+    color: hsl(0, 100%, 64%);
+    outline: none;
 }
 
-input:focus:invalid::placeholder {
+form:has(input:focus:invalid)::before {
+    content: "Valid email required";
     color: hsl(0, 100%, 74%);
+    font-size: 12px;
+    font-weight: bold;
+    position: relative;
+    width: 100%;
+    height: 0;
+    text-align: right;
 }
 
 button {
