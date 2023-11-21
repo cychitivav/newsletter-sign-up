@@ -26,7 +26,7 @@ body {
     height: 100vh;
 }
 
-main {
+section {
     background-color: white;
     border-radius: 2rem;
     display: flex;
@@ -35,8 +35,27 @@ main {
     width: 65vw;
 }
 
-section {
+.success {
+    display: block;
+    padding: 4rem;
+    width: 37vw;
+}
+
+.success img {
+    margin-bottom: 2rem;
+}
+
+.success span {
+    font-weight: bold;
+}
+
+.success button {
+    margin-top: 2rem;
+}
+
+article {
     display: flex;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
@@ -89,10 +108,15 @@ input {
     padding: 1rem;
     margin-bottom: 1rem;
     width: 100%;
+    font-size: 14px;
 }
 
 input::placeholder {
     color: hsl(231, 7%, 60%);
+}
+
+input:focus {
+    cursor: pointer;;
 }
 
 button {
@@ -104,4 +128,10 @@ button {
     padding: 1rem;
     font-size: 16px;
     width: 100%;
+}
+
+button:hover {
+    background: linear-gradient(to right, hsl(4, 97%, 58%), hsl(4, 100%, 67%));
+    cursor: pointer;
+    box-shadow: 0px 10px 10px hsl(0, 0%, 0%, 0.1);
 }
