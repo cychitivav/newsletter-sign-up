@@ -5,5 +5,5 @@ document.querySelector("form").addEventListener("submit", (event) => {
 	document.getElementById("sent-email").innerHTML = data.get("email");
 
 	document.getElementById("home").style.display = "none";
-	document.getElementById("success").style.display = "block";
+	document.getElementById("success").style.display = "";
 });
