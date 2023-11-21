@@ -32,25 +32,10 @@ section {
     display: flex;
     flex-direction: row;
     padding: 1rem;
-    width: 65vw;
 }
 
-#success {
-    display: block;
-    padding: 4rem;
-    width: 37vw;
-}
-
-#success img {
-    margin-bottom: 2rem;
-}
-
-#success span {
+section span {
     font-weight: bold;
-}
-
-#success button {
-    margin-top: 2rem;
 }
 
 article {
@@ -60,7 +45,18 @@ article {
     justify-content: center;
     align-items: flex-start;
     padding: 3rem;
+    width: 35vw;
 }
+
+section#success {
+    flex-direction: column;
+}
+
+section#success img {
+    width: 10rem;
+    padding: 3rem 3rem 0;
+}
+
 
 h1 {
     font-size: 4rem;
@@ -72,6 +68,12 @@ p {
     font-size: 16px;
     margin: 1rem 0;
     line-height: 1.7em;
+    margin-bottom: 2rem;
+}
+
+ul {
+    list-style: none;
+    margin-bottom: 2rem;
 }
 
 ul li {
@@ -92,7 +94,6 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-top: 2rem;
     width: 100%;
 }
 
@@ -116,7 +117,16 @@ input::placeholder {
 }
 
 input:focus {
-    cursor: pointer;;
+    cursor: pointer;
+}
+
+input:focus:invalid {
+    border: 1px solid hsl(0, 100%, 74%);
+    background-color: hsl(4, 100%, 67%, 0.2);
+}
+
+input:focus:invalid::placeholder {
+    color: hsl(0, 100%, 74%);
 }
 
 button {
