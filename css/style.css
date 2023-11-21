@@ -35,21 +35,21 @@ section {
     width: 65vw;
 }
 
-.success {
+#success {
     display: block;
     padding: 4rem;
     width: 37vw;
 }
 
-.success img {
+#success img {
     margin-bottom: 2rem;
 }
 
-.success span {
+#success span {
     font-weight: bold;
 }
 
-.success button {
+#success button {
     margin-top: 2rem;
 }
 
